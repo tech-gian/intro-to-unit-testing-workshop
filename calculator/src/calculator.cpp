@@ -11,12 +11,12 @@ int add(int a, int b)
 
 int subtract(int a, int b)
 {
-    return a + b;
+    return a - b;
 }
 
 double divide(int a, int b)
 {
     assert(b != 0);
-    return a / b;
+    return static_cast<double>(a) / static_cast<double>(b);
 }
 } // namespace calculator
